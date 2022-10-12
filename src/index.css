@@ -58,12 +58,12 @@ button:hover {
 
 .card-images{
   position: relative;
-
- display: flex;
- justify-content: center;
- align-items: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+  
 
 .front-card {
   margin-left: 30px;
@@ -114,23 +114,92 @@ button:hover {
   
 
 @media only screen and (max-width: 611px) {
+  .header h1 {
+    color: rgb(255, 80, 197);
+    padding-top: 10px;
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: rgb(255, 80, 197);
+    border-color: transparent;
+    letter-spacing: 0.9px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
   .card-container {
-    padding-top: 50px;
+    padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
 }
 
 
-@media only screen and (max-width: 611px) {
+@media only screen and (max-width: 481px) {
+  .header h1 {
+    color: rgb(255, 80, 197);
+    padding-top: 10px;
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: rgb(255, 80, 197);
+    border-color: transparent;
+    letter-spacing: 0.9px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
   .card-container {
-    padding-top: 50px;
+    padding-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
   }
 }
+
+
+@media only screen and (max-width: 320px) {
+  .header h1 {
+    color: rgb(255, 80, 197);
+    padding-top: 10px;
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: rgb(255, 80, 197);
+    border-color: transparent;
+    letter-spacing: 0.9px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .card-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+}
+
+
 
 
 
