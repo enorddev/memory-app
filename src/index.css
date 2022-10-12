@@ -113,6 +113,24 @@ button:hover {
   
   
 
+@media only screen and (max-width: 611px) {
+  .card-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 611px) {
+  .card-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 5px;
+  }
+}
 
 
 

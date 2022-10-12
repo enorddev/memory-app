@@ -18,6 +18,7 @@ function App() {
   const [flip, setFlip] = useState(0)
   const [flipOne, setFlipOne] = useState(null)
   const [flipTwo, setFlipTwo] = useState(null)
+  const [win, setWin] = useState(false)
 
 
   const suffleImages = () => {
@@ -70,6 +71,16 @@ function App() {
     suffleImages()
   }, [])
     
+  // useEffect(() => {
+  //   const allFlipped = cards.every(card => card.isFlipped)
+  //   if(allFlipped) {
+  //     setWin(true)
+  //     console.log("winner");
+  //   }
+  // })
+
+ 
+
 
   return (
     <div className="App">
