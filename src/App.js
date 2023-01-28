@@ -4,12 +4,12 @@ import './App.css';
 import Cards from './components/Cards';
 
 const CardsData = [
-  {"img": "./icons8-smiley-64.png" , matched: false},
-  {"img": "./icons8-chocolate-bar-emoji-64.png" , matched: false},
-  {"img": "./icons8-horse-emoji-64.png", matched: false},
-  {"img": "./icons8-mirror-emoji-64.png", matched: false},
-  {"img": "./icons8-ninja-emoji-64.png", matched: false},
-  {"img": "./icons8-potted-plant-emoji-64.png", matched: false},
+  {"img": "./ace_of_spades2.png" , matched: false},
+  {"img": "./ace_of_diamonds.png" , matched: false},
+  {"img": "./ace_of_hearts.png", matched: false},
+  {"img": "./red_joker.png", matched: false},
+  {"img": "./black_joker.png", matched: false},
+  {"img": "./ace_of_spades.png", matched: false},
 ]
 
 function App() {
@@ -71,20 +71,24 @@ function App() {
     suffleImages()
   }, [])
     
-  // useEffect(() => {
-  //   const allFlipped = cards.every(card => card.isFlipped)
-  //   if(allFlipped) {
-  //     setWin(true)
-  //     console.log("winner");
-  //   }
-  // })
+
+const winner = () => {
+ cards.every(card => card.isFlipped) 
+   return console.log("winner");
+
+}
+
+  
 
  
 
 
   return (
+  
     <div className="App">
+    
       <header className="header">
+      <img src='/img/brain-emoji-96.png' className='rotating' id='brain'/>
         <h1>MEMORY GAME</h1>
         <button onClick={suffleImages}>Shuffle</button>
       </header>

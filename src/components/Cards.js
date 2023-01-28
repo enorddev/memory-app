@@ -12,7 +12,7 @@ export default function Cards({card, handleCard, isFlipped}) {
                 <img className='front-card' src={card.img} alt="Front Card"/>
                 
                 <img className='back-card' 
-                    src='./icons8-card-100.png' 
+                    src='./card_back_black.png' 
                     onClick={handleFlipOne} 
                     alt='Back Card'/>
             </div>
