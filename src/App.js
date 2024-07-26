@@ -10,6 +10,16 @@ const CardsData = [
   {"img": "./red_joker.png", matched: false},
   {"img": "./black_joker.png", matched: false},
   {"img": "./ace_of_spades.png", matched: false},
+  {"img": "./king_of_hearts2.png", matched: false},
+  {"img":"./7_of_clubs.png", matched: false},
+  {"img":"./queen_of_diamonds2.png", matched: false},
+  {"img":"./9_of_hearts.png", matched: false},
+  {"img":"./queen_of_clubs.png", matched: false},
+  {"img":"./6_of_spades.png", matched: false},
+  {"img":"./4_of_diamonds.png", matched: false},
+  {"img":"./8_of_diamonds.svg", matched: false},
+  {"img":"./2_of_clubs.svg", matched: false}
+
 ]
 
 function App() {
@@ -88,7 +98,7 @@ const winner = () => {
     <div className="App">
     
       <header className="header">
-      <img src='/img/brain-emoji-96.png' className='rotating' id='brain'/>
+      <img src='/img/brain-emoji-96.png' alt='Top Image Braim' className='rotating' id='brain'/>
         <h1>MEMORY GAME</h1>
         <button onClick={suffleImages}>Shuffle</button>
       </header>
